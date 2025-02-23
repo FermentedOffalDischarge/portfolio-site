@@ -3,7 +3,7 @@ body {
 	color: #FFFFFF;
 	margin: 10px;
 	padding: 22.5px;
-	font-family: sans-serif;
+	font-family: sans-serif, system-ui;
 	display: flex;
 	flex-direction: column;
 	min-height: 100vh;
@@ -22,3 +22,20 @@ h1, h2, h3, h4, p {
 footer {
 	margin-top: auto;
 }
+
+a:hover {
+	color: #FF6347;
+	text-decoration: underline;
+}
+
+@media  (max-width: 600px) {
+	body {
+		padding: 10px
+	}
+	nav ul {
+		display: block;
+		text-align: center;
+	}
+	nav ul li {
+	    margin-bottom: 10px;
+	}
