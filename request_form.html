@@ -10,7 +10,7 @@
 <h1>Home</h1>
 <nav aria-label="Main Navigation">
 <ul>
-<li><a href="Prototype.html">Home</a></li>
+<li><a href="home.html">Home</a></li>
 <br>
 <li><a href="contact.html">Contact</a></li>
 <br>
@@ -22,21 +22,24 @@
 </header>
   <h1>Request Form</h1>
   <h2>Would you like to reach out?</h2>
+    <p>If you would like to reach out to me, fill in your name, email, and write a message concerning your needs,
+      or if you have any questions.<br>&nbsp;<br>It will be forwarded straight to my business email.</p>
+    <br>
 <form
   action="https://formspree.io/f/mqaeowya"
   method="POST"
 >
   <label>
   Your name:
-  <input type="name" name="name">
+  <input type="name" name="name" required>
   </label>
   <label>
     Your email:
-    <input type="email" name="email">
+    <input type="email" name="email" required>
   </label>
   <label>
     Your message:
-    <textarea name="message"></textarea>
+    <textarea name="message" required></textarea>
   </label>
   <button type="submit">Send</button>
 </form>
