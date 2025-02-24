@@ -11,8 +11,22 @@ body {
 	font-size-adjust: 0.5;
 }
 
+form {
+	padding: 10px 20px;
+}
+
 ul li::marker {
+	position: sticky;
 	color: #000000;
+}
+
+ul a, .back-to-top {
+	display: inline-block;
+	padding: 10px 20px;
+	background-color: #FFFFFF;
+	color: black;
+	text-decoration: none;
+	border-radius: 5px;
 }
 
 h1, h2, h3, h4, p {
@@ -24,7 +38,17 @@ footer {
 }
 
 a:hover {
-	color: #FF6347;
+	color: #D3D3D3;
+	text-decoration: underline;
+}
+
+.back-to-top {
+	text-align: center:
+	margin-top: 10px;
+}
+
+.back-to-top:hover {
+	color: #D3D3D3;
 	text-decoration: underline;
 }
 
