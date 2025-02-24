@@ -43,13 +43,68 @@ a:hover {
 }
 
 .back-to-top {
-	text-align: center:
+	text-align: center;
 	margin-top: 10px;
 }
 
 .back-to-top:hover {
 	color: #D3D3D3;
 	text-decoration: underline;
+}
+
+form {
+	align-content: normal;
+	max-width: 600px;
+	margin: 0 auto;
+	padding: 20px;
+	background-color: #1b1b1b;
+	border-radius: 10px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+form label {
+	display: block;
+	margin-bottom: 8px;
+	color: #fff;
+	font-size: 18px;
+}
+
+form input [type="text"],
+form input [type="email"],
+form textarea {
+	width: 100%;
+	padding: 10px;
+	margin-bottom: 20px;
+	border-radius: 5px;
+	box-sizing: border-box;
+}
+
+form input [type="text"]:focus,
+form input [type="email"]:focus,
+form textarea:focus {
+	outline: none;
+	border-color: white;
+}
+
+form textarea {
+	height: 150px;
+	resize: vertical;
+}
+
+form button[type="submit"] {
+	display: inline-block;
+	background-color: white;
+	color: #000000;
+	border: none;
+	padding: 10px 20px;
+	text-transform: uppercase;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: background 0.3s;
+}
+
+form button[type="submit"]:hover {
+	background-color: #d3d3d3;
 }
 
 @media  (max-width: 600px) {
@@ -63,3 +118,4 @@ a:hover {
 	nav ul li {
 	    margin-bottom: 10px;
 	}
+}
