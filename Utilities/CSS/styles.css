@@ -113,6 +113,72 @@ form button[type="submit"]:hover {
 	background-color: #d3d3d3;
 }
 
+#nav-menu {
+	display: none;
+	background-color: white;
+	position: absolute;
+	top: 50px;
+	left: 0;
+	width: 200px;
+	padding: 10px;
+	border-radius: 5px;
+}
+
+#nav menu ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+#nav menu li {
+	padding: 10px;
+}
+
+#nav menu a {
+	color: white;
+	text-decoration: none;
+	display: block;
+}
+
+#menu-toggle {
+	background: #FFFFFF;
+	color: black;
+	border: none;
+	padding: 10px 15px;
+	cursor: pointer;
+}
+
+#menu-toggle:hover {
+	background: #D3D3D3;
+}
+
+.loader-wrapper {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	background: #000;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 9999;
+}
+
+.loader {
+	border: 8px solid #f3f3f3;
+	border-top: 8px solid #3498db;
+	border-radius: 50%;
+	width: 60px;
+	height: 60px;
+	animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+	0% { transform: rotate(0deg); }
+	100% { transform: rotate(360deg); }
+}
+
 @media  (max-width: 600px) {
 	body {
 		padding: 10px
